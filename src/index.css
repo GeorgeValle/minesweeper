@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Aquamarine theme */
+body {
+  background-color: #7FFFD4; /* Aquamarine */
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Digital-ish LCD styling helpers */
+.lcd {
+  background: #000;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  box-shadow: inset 0 0 0 2px rgba(255, 0, 0, 0.25);
+  margin: 0.5rem;
+}
+
+.lcdDigits {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  letter-spacing: 0.06em;
+  color: #ff2a2a;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.35);
+  line-height: 1;
+}
+
+.button-styles {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #000;
+  background-color: #40E0D0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.toolbar-styles{
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #000;
+  background-color: #B2FFF2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
