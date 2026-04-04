@@ -1,0 +1,31 @@
+# Dependencias (Nunca se suben, pesan gigas)
+node_modules/
+.pnpm-store/
+pnpm-lock.yaml
+dist/
+
+# Logs de errores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Entorno y Secretos (Seguridad)
+.env
+*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos del Sistema Operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuración de Editor (Opcional, pero recomendado)
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
