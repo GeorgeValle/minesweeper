@@ -5,13 +5,16 @@ function toolIcon(tool: Tool) {
   switch (tool) {
     case "shovel":
       // Usamos w-7 h-7 para que el radar llene mejor el botón
-      return <img src="/assets/radar.png" alt="Radar" className="w-7 h-7 object-contain m-3 px-3" />;
+      // return <img src="/assets/radar.png" alt="Radar" className="w-7 h-7 object-contain m-3 px-3" />;
+      return <img src="https://res.cloudinary.com/georgevalle/image/upload/v1776573901/projects/radar_ttdnq2.png" alt="Radar" width="16" height="16" />;
     case "flag":
       // La boya ahora tendrá el mismo peso visual
-      return <img src="/assets/boya.png" alt="Buoy" className="w-7 h-7 object-contain m-3 px-3" />;
+      // return <img src="/assets/boya.png" alt="Buoy" className="w-7 h-7 object-contain m-3 px-3" />;
+      return <img src="https://res.cloudinary.com/georgevalle/image/upload/v1776573883/projects/boya_at6e4n.png" alt="Flag" width="16" height="16" />;
     case "question":
       // El emoji necesita un tamaño de texto mayor para equipararse
-      return <span className="text-2xl m-3 px-3">❓</span>;
+      // return <span className="text-2xl m-3 px-3">❓</span>;
+      return <img src="https://res.cloudinary.com/georgevalle/image/upload/v1776575100/projects/question_vph6cl.png" alt="Question" width="16" height="16" />;
     default:
       return tool;
   }

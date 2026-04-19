@@ -57,10 +57,11 @@ const Cell = memo(function Cell({
   const content = (() => {
     if (!cell.isRevealed) {
       if (cell.mark === "flag") {
-        return <img src="/assets/boya.png" alt="Flag" width="16" height="16" />;
+        return <img src="https://res.cloudinary.com/georgevalle/image/upload/v1776573883/projects/boya_at6e4n.png" alt="Flag" width="16" height="16" />;
       }
       if (cell.mark === "question") {
-        return <span className="text-zinc-600 font-bold text-lg">❓</span>;
+        // return <span className="text-zinc-600 font-bold text-lg">❓</span>;
+        return <img src="https://res.cloudinary.com/georgevalle/image/upload/v1776575100/projects/question_vph6cl.png" alt="Question" width="16" height="16" />;
       }
       return null;
     }
@@ -69,7 +70,7 @@ const Cell = memo(function Cell({
     if (gameStatus === "lost" && cell.hasMine) {
       return (
         <div className="relative flex items-center justify-center w-full h-full">
-          <img src="/assets/mina.png" alt="Mine" width="16" height="16" />
+          <img src="https://res.cloudinary.com/georgevalle/image/upload/v1776573887/projects/mina_xnq1p7.png" alt="Mine" width="16" height="16" />
           {isExplodedMine && (
             <div className="absolute flex items-center justify-center w-full h-full text-red-500 font-bold text-2xl">
               X
